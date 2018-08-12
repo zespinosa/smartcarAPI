@@ -112,7 +112,7 @@ Content-Type: application/json
 ```
 
 # Error Codes
-### 200 successful api call
+### 200 Successful API call
 Expect correct response as specified under Example Usage
 ### 400 GMI Error
 This happens when we are unable to access the GMI API, and may be a result of the GMI server being down or poor internet connectivity.
