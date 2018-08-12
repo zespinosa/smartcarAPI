@@ -17,7 +17,7 @@ the GMI API has been successfully called.
 ### gmiFailure.js
 This file contains all error checking and handling when GMI API calls fail or return incorrect response
 ### test.js
-This file contains all units tests written in mocha and chai for the SmartCar challenge API.
+This file contains all unit tests written in mocha and chai.
 
 ## Install
 
