@@ -41,14 +41,14 @@ npm test
 # Example Usage
 As of now, the only available vehicle IDs are 1234 and 1235
 ## Vehicle Info
-# Request
+### Request
 ```
 GET /vehicles/:id
 ```
-# Response
+### Response
 ```
 {
-  "vin": '123454321',
+  "vin": "123454321",
   "color": "Forest Green",
   "doorCount": 2,
   "driveTrain": "v8",
@@ -56,30 +56,30 @@ GET /vehicles/:id
 ```
 
 ## Security
-# Request
+### Request
 ```
 GET /vehicles/:id/doors
 ```
-# Response
+### Response
 ```
 [
   {
-    "location": 'frontLeft',
+    "location": "frontLeft",
     "locked": true,
   },
   {
-    "location": 'frontLeft',
+    "location": "frontLeft",
     "locked": true,
   }
 ]
 ```
 
 ## Fuel Range
-# Request
+### Request
 ```
 GET /vehicles/:id/fuel
 ```
-# Response
+### Response
 ```
 {
   "percent": 30
@@ -87,11 +87,11 @@ GET /vehicles/:id/fuel
 ```
 
 ## Battery Range
-# Request
+### Request
 ```
 GET /vehicles/:id/battery
 ```
-# Response
+### Response
 ```
 {
   "percent": 50
@@ -99,12 +99,12 @@ GET /vehicles/:id/battery
 ```
 
 ## Start/Stop Engine
-# Request
+### Request
 ```
 POST /vehicles/:id/engine
 Content-Type: application/json
 ```
-# Response
+### Response
 ```
 {
   "action": "START|STOP"
