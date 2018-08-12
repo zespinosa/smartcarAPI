@@ -1,0 +1,30 @@
+Did Well:
+  - Code modularity
+  - Functionality - door :(
+  - Commenting
+  - Utilizing existing APIs/Frameworks/Libraries
+  - Quickly learning Postman and tests
+  - Error Checking & Handling
+
+Things to work on:
+  - Sharing postman tests
+  - ReadMe
+
+
+  - How to Install
+  - How to Run
+  - Package functions
+  - Errors documentation
+  - Example Usage
+  - Next Steps
+  - Comment at top of functions
+
+Mocca: unit testing
+Data transformation functions: remove res handling (don't leak express handling)
+Improves testing and segments frameworks for easier testing
+
+Next Steps:
+  - Host on AWS or GCP
+  - Correct ReadMe
+  - Improve Error Checking
+  - Build Dashboard or Front End UI
