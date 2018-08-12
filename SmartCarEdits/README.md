@@ -8,11 +8,11 @@ Testing is completed using [mocha](https://mochajs.org/) and [chai](http://www.c
 This file contains the server for the SmartCar Coding Challenge API. All server interactions
 are modularized within this file and powered by express. This file is the work horse of our API.
 ### GMI.js
-This file contains all interactions made with the GMI API. HTTP requests are made using the
+This file contains all interactions with the GMI API. HTTP requests are made using the
 node.js wrapper library [request-promise](https://github.com/request/request-promise). As of now
 this file contains only a POST function, but could be expanded for future use.    
 ### gmiSuccess.js
-This file contains callback functions responsible for constructing SmartCar client responses after
+This file contains functions responsible for constructing client responses after
 the GMI API has been successfully called.  
 ### gmiFailure.js
 This file contains all error checking and handling when GMI API calls fail or return incorrect response
