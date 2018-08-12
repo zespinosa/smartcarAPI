@@ -32,7 +32,7 @@ node server.js
 ```
 
 ## Run Test Script
-Note, that when running the test script for the first time, some checks may fail due to Timeout errors. This is a result of running the server locally and should not be concerning.
+Note that when running test.js  for the first time, some checks may fail due to Timeout errors. This is a result of running the server locally and should not be concerning.
 All unit testing is completed using [mocha](https://mochajs.org/) and [chai](http://www.chaijs.com/).
 ```
 npm test
