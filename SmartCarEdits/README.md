@@ -1,12 +1,12 @@
 # SmartCar Coding Challenge
 
-Welcome to my SmartCar Coding Challenge API Response. Below you'll find everything you need to get started with this project. This project makes it easy to read, write, and interact with the GMI API using HTTP requests and follows the SmartCar Coding Challenge specifications. This API does not require an access token or authentication and is limited in its scope.    
+Welcome to my SmartCar Coding Challenge API Response. Below you'll find everything you need to get started with this project. This project makes it easy to read, write, and interact with the GMI API by using simple HTTP requests. This follows the SmartCar Coding Challenge specifications as outlined in the Example Usage section below. This API does not require an access token or authentication and is limited in its scope.    
 Testing is completed using [mocha](https://mochajs.org/) and [chai](http://www.chaijs.com/). The server is written using Javascript, NodeJS, and Express.
 
 ## File Roles
 ### Server.js
-This file contains the server for the SmartCar Coding Challenge API. All server interactions
-are modularized within this file and powered by express. This file is the work horse of our API.
+This file contains our server and is the work horse of this API. All server interactions
+are modularized within this file and powered by express.
 ### GMI.js
 This file contains all interactions with the GMI API. HTTP requests are made using the
 node.js wrapper library [request-promise](https://github.com/request/request-promise). As of now
@@ -15,13 +15,13 @@ this file contains only a POST function, but could be expanded for future use.
 This file contains functions responsible for constructing client responses after
 the GMI API has been successfully called.  
 ### gmiFailure.js
-This file contains all error checking and handling when GMI API calls fail or return incorrect response
+This file contains all error checking and handling when GMI API calls fail or return an incorrect response.
 ### test.js
 This file contains all unit tests written in mocha and chai.
 
 ## Install
 
-Download all files.
+Download all files. Then run the following command to install project dependencies. 
 ```
 npm install
 ```
@@ -32,7 +32,7 @@ node server.js
 ```
 
 ## Run Test Script
-Note that when running test.js  for the first time, some checks may fail due to Timeout errors. This is a result of running the server locally and should not be concerning.
+Note that when running test.js for the first time, some checks may fail due to Timeout errors. This is a result of running the server locally and should not be concerning.
 All unit testing is completed using [mocha](https://mochajs.org/) and [chai](http://www.chaijs.com/).
 ```
 npm test
@@ -103,19 +103,22 @@ GET /vehicles/:id/battery
 ```
 POST /vehicles/:id/engine
 Content-Type: application/json
+{
+  "action": "START|STOP"
+}
 ```
 ### Response
 ```
 {
-  "action": "START|STOP"
+  "status": "success|error"
 }
 ```
 
 # Error Codes
 ### 200 Successful API call
-Expect correct response as specified under Example Usage
+Expect the correct response as specified under Example Usage
 ### 400 GMI Error
-This happens when we are unable to access the GMI API, and may be a result of the GMI server being down or poor internet connectivity.
+This happens when we are unable to access the GMI API and may be a result of the GMI server being down or poor internet connection.
 ### 404 Bad Request
 Check that your request follows the specifications under Example Usage
 
@@ -129,4 +132,4 @@ Check that your request follows the specifications under Example Usage
 - Create authentication process through tokens/API key
 
 # Support
-For additional support or clarifications please contact zespinsa97@gmail.com
+For additional support please contact zespinsa97@gmail.com
