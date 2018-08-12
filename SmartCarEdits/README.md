@@ -1,6 +1,6 @@
 # SmartCar Coding Challenge
 
-Welcome to the SmartCar Coding Challenge API Response. Below you'll find everything you need to get started with this project. This project makes it easy to read, write, and interact with the GMI API using HTTP requests and follows the SmartCar Coding Challenge specifications. This API does not require an access token or authentication and is limited in its scope.    
+Welcome to my SmartCar Coding Challenge API Response. Below you'll find everything you need to get started with this project. This project makes it easy to read, write, and interact with the GMI API using HTTP requests and follows the SmartCar Coding Challenge specifications. This API does not require an access token or authentication and is limited in its scope.    
 Testing is completed using [mocha](https://mochajs.org/) and [chai](http://www.chaijs.com/). The server is written using Javascript, NodeJS, and Express.
 
 ## File Roles
